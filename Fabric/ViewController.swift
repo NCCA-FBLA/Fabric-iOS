@@ -27,10 +27,13 @@ class ViewController: UIViewController {
         UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("loginScreen", sender: self)})
     }
 }
-// Test
+
 class LoginScreen: UIViewController {
     
-    func prepareForSegue(){
+    func viewDiDLoad() {
+        super.viewDidLoad()
+    
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     
     }
 }
