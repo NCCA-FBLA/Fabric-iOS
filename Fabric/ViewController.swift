@@ -44,6 +44,8 @@ class WelcomeScreen: UIViewController {
         self.WelcomeLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 24)
         self.signUp.layer.cornerRadius = 10
         self.loginButton.layer.cornerRadius = 10
+        
+        UIApplication.sharedApplication().statusBarStyle = .Default
     
     }
 }
