@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,16 +25,25 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         // Move the icon away.
-        UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("loginScreen", sender: self)})
+        UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("welcomeScreen", sender: self)})
     }
 }
 
-class LoginScreen: UIViewController {
+class WelcomeScreen: UIViewController {
     
-    func viewDiDLoad() {
+    
+    @IBOutlet weak var WelcomeLabel: UILabel!
+    
+    @IBOutlet weak var signUp: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
     
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        // Make the UI Pretty.
+        self.WelcomeLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 24)
+        self.signUp.layer.cornerRadius = 10
+        self.loginButton.layer.cornerRadius = 10
     
     }
 }
