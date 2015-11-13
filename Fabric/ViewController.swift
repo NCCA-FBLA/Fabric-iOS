@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         // Move the icon away.
-        UIView.animateWithDuration(1, delay: 0.3, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("loginScreen", sender: self)})
+        UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("loginScreen", sender: self)})
     }
 }
 // Test

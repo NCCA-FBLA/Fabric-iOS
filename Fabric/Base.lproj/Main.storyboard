@@ -75,7 +75,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar multipleTouchEnabled="YES" contentMode="scaleToFill" backIndicatorImage="small_steps" translatesAutoresizingMaskIntoConstraints="NO" id="2p6-wZ-IwN">
+                            <navigationBar multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2p6-wZ-IwN">
                                 <rect key="frame" x="0.0" y="20" width="614" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -176,6 +176,5 @@
     </scenes>
     <resources>
         <image name="rounded_corners" width="1024" height="1024"/>
-        <image name="small_steps" width="40" height="20"/>
     </resources>
 </document>
