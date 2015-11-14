@@ -31,6 +31,9 @@ class ViewController: UIViewController {
 
 class WelcomeScreen: UIViewController {
     
+    @IBAction func CreditsGesture(sender: AnyObject) {
+        performSegueWithIdentifier("credits", sender: self)
+    }
     
     @IBOutlet weak var WelcomeLabel: UILabel!
     
@@ -43,7 +46,18 @@ class WelcomeScreen: UIViewController {
         // Make the UI Pretty.
         self.WelcomeLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 24)
         self.signUp.layer.cornerRadius = 10
+        
+        // Shadows!
+        
         self.loginButton.layer.cornerRadius = 10
+        self.loginButton.layer.shadowColor = UIColor.lightGrayColor().CGColor
+        self.loginButton.layer.shadowOpacity = 1;
+        self.loginButton.layer.shadowRadius = 1;
+        self.loginButton.layer.shadowOffset = CGSizeMake(2.0, 2.0);
+        self.signUp.layer.shadowColor = UIColor.lightGrayColor().CGColor
+        self.signUp.layer.shadowOpacity = 1;
+        self.signUp.layer.shadowRadius = 1;
+        self.signUp.layer.shadowOffset = CGSizeMake(2.0, 2.0);
         
         UIApplication.sharedApplication().statusBarStyle = .Default
     

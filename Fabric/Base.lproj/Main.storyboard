@@ -36,7 +36,7 @@
                     <connections>
                         <outlet property="splashImage" destination="vFD-Kx-Abk" id="ms7-JP-yRA"/>
                         <segue destination="Znp-Ov-XUL" kind="show" identifier="welcomeScreen" animates="NO" id="mnJ-SJ-B0D"/>
-                        <segue destination="mJy-7h-EUo" kind="show" id="dPT-WH-AVy"/>
+                        <segue destination="mJy-7h-EUo" kind="show" identifier="toMain" id="dPT-WH-AVy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLh-36-M55" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,12 +60,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYD-sE-Lys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="1016"/>
+            <point key="canvasLocation" x="695" y="972"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="dBF-pG-Z05">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wRt-Fs-fRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="loginScreen" title="Welcome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Znp-Ov-XUL" customClass="WelcomeScreen" customModule="Fabric" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YWf-Oe-lvC"/>
@@ -79,8 +78,8 @@
                                 <rect key="frame" x="250" y="107" width="100" height="100"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome To Fabric" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRZ-95-E3t">
-                                <rect key="frame" x="196" y="224" width="209" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Fabric" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRZ-95-E3t">
+                                <rect key="frame" x="198.5" y="224" width="204" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,8 +87,8 @@
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE0-g9-iBG">
-                                <rect key="frame" x="196" y="293" width="209" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE0-g9-iBG">
+                                <rect key="frame" x="196" y="278" width="209" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -98,14 +97,14 @@
                                     <constraint firstAttribute="width" constant="209" id="egS-ow-pO5"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mTm-cy-IJ4" kind="show" id="3eh-uY-vbh"/>
+                                    <segue destination="mTm-cy-IJ4" kind="show" identifier="signUp" id="3eh-uY-vbh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcm-fn-li4">
-                                <rect key="frame" x="196" y="354" width="209" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcm-fn-li4">
+                                <rect key="frame" x="196" y="339" width="209" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -116,12 +115,13 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tlc-ao-hyV" kind="show" id="gxd-4t-Kh1"/>
+                                    <segue destination="tlc-ao-hyV" kind="show" identifier="login" id="gxd-4t-Kh1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="NE0-g9-iBG" firstAttribute="top" secondItem="TRZ-95-E3t" secondAttribute="bottom" constant="24" id="4Hc-UU-IP6"/>
                             <constraint firstItem="NE0-g9-iBG" firstAttribute="width" secondItem="aZ9-Mx-LlT" secondAttribute="height" multiplier="209:700" constant="29.857142857142833" id="4Pe-Co-Nz5"/>
@@ -137,15 +137,58 @@
                             <constraint firstItem="TRZ-95-E3t" firstAttribute="centerX" secondItem="aZ9-Mx-LlT" secondAttribute="centerX" id="jYA-rJ-vTU"/>
                             <constraint firstItem="lcm-fn-li4" firstAttribute="top" secondItem="NE0-g9-iBG" secondAttribute="bottom" constant="21" id="mT0-xq-ftk"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iyP-m3-haA" appends="YES" id="BVn-i6-MsR"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="WelcomeLabel" destination="TRZ-95-E3t" id="8Kb-eA-Apt"/>
                         <outlet property="loginButton" destination="lcm-fn-li4" id="weV-Ou-Hia"/>
                         <outlet property="signUp" destination="NE0-g9-iBG" id="qfh-jB-l0p"/>
+                        <segue destination="yo3-87-Wki" kind="show" identifier="credits" id="URu-BK-Awc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRt-Fs-fRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="2" id="iyP-m3-haA">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="CreditsGesture:" destination="Znp-Ov-XUL" id="QAb-Ve-EMO"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="617" y="101"/>
+            <point key="canvasLocation" x="613" y="93"/>
+        </scene>
+        <!--Credits-->
+        <scene sceneID="CgR-Il-W6C">
+            <objects>
+                <viewController storyboardIdentifier="creditsView" title="Credits" id="yo3-87-Wki" customClass="CreditsView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kRb-Re-a6b"/>
+                        <viewControllerLayoutGuide type="bottom" id="MbG-fR-2F5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y78-zj-6sE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(credits and build info to come)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-Bi-ErH">
+                                <rect key="frame" x="181" y="290.5" width="238" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TZg-Bi-ErH" firstAttribute="centerX" secondItem="Y78-zj-6sE" secondAttribute="centerX" id="ddb-ci-RAs"/>
+                            <constraint firstItem="TZg-Bi-ErH" firstAttribute="centerY" secondItem="Y78-zj-6sE" secondAttribute="centerY" id="o3K-PU-akG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9R-n0-2Ge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="-635"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="G9Z-YT-PiO">
@@ -162,7 +205,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="mJy-7h-EUo" kind="show" id="5zL-G2-rAe"/>
+                        <segue destination="mJy-7h-EUo" kind="show" identifier="toMainFromSignUp" id="5zL-G2-rAe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZg-eY-HDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,7 +227,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="mJy-7h-EUo" kind="show" id="T5U-7T-Eku"/>
+                        <segue destination="mJy-7h-EUo" kind="show" identifier="toMainFromLogin" id="T5U-7T-Eku"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYS-IA-fuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -196,6 +239,6 @@
         <image name="rounded_corners" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T5U-7T-Eku"/>
+        <segue reference="dPT-WH-AVy"/>
     </inferredMetricsTieBreakers>
 </document>
