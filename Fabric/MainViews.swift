@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViews.swift
 //  Fabric
 //
 //  Created by Tyler Darby on 11/11/15.
@@ -10,7 +10,6 @@ import UIKit
 import Parse
 
 class SplashView: UIViewController {
-
     @IBOutlet weak var splashImage: UIImageView!
     
     override func viewDidLoad() {
