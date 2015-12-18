@@ -45,15 +45,26 @@ class WelcomeScreen: UIViewController {
 	
     @IBOutlet weak var WelcomeLabel: UILabel!
     @IBOutlet weak var facebookLoginButton: UIButton!
+    @IBOutlet weak var twitterLoginButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         // Make the UI Pretty.
+        
         self.WelcomeLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 30)
         self.facebookLoginButton.layer.cornerRadius = 20
+        self.twitterLoginButton.layer.cornerRadius = 20
         
-        UIApplication.sharedApplication().statusBarStyle = .Default
+        
+        // Background image.
+        let img = UIImage(named: "manhattan")?.tint(UIColor(colorLiteralRed: 221.0/255.0, green: 43.0/255.0, blue: 105/255.0, alpha: 175.0/255.0))
+        let imgview = UIImageView(image: img!)
+        imgview.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.bounds.height*(16/9), height: self.view.bounds.height))
+        imgview.center = CGPointMake(self.view.bounds.width/2, self.view.bounds.height/2)
+        self.view.addSubview(imgview)
+        self.view.sendSubviewToBack(imgview)
 	
 		
 	}
