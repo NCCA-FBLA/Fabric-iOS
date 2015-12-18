@@ -44,26 +44,14 @@ class WelcomeScreen: UIViewController {
     }
 	
     @IBOutlet weak var WelcomeLabel: UILabel!
-    @IBOutlet weak var signUp: UIButton!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var facebookLoginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         // Make the UI Pretty.
-        self.WelcomeLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 24)
-        self.signUp.layer.cornerRadius = 10
-        self.loginButton.layer.cornerRadius = 10
-		
-		// Shadows!
-        self.loginButton.layer.shadowColor = UIColor.lightGrayColor().CGColor
-        self.loginButton.layer.shadowOpacity = 1;
-        self.loginButton.layer.shadowRadius = 1;
-        self.loginButton.layer.shadowOffset = CGSizeMake(2.0, 2.0);
-        self.signUp.layer.shadowColor = UIColor.lightGrayColor().CGColor
-        self.signUp.layer.shadowOpacity = 1;
-        self.signUp.layer.shadowRadius = 1;
-        self.signUp.layer.shadowOffset = CGSizeMake(2.0, 2.0);
+        self.WelcomeLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 30)
+        self.facebookLoginButton.layer.cornerRadius = 20
         
         UIApplication.sharedApplication().statusBarStyle = .Default
 	
