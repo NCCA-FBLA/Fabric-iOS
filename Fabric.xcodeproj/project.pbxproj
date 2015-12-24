@@ -26,9 +26,14 @@
 		18F69F661BF930940080D2CD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F5B1BF930940080D2CD /* Social.framework */; };
 		18F69F671BF930940080D2CD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F5C1BF930940080D2CD /* StoreKit.framework */; };
 		18F69F681BF930940080D2CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F5D1BF930940080D2CD /* SystemConfiguration.framework */; };
+		EE69362F1C262A38007D58D5 /* DevTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69362E1C262A38007D58D5 /* DevTools.swift */; };
 		EEA873F91C24B9DD00BA8AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */; };
+		EEA873FB1C250E1700BA8AD3 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA873FA1C250E1700BA8AD3 /* FontAwesome.swift */; };
+		EEA873FD1C250E7C00BA8AD3 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA873FC1C250E7C00BA8AD3 /* FontAwesome.otf */; };
+		EEA873FF1C250EF800BA8AD3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA873FE1C250EF800BA8AD3 /* Enum.swift */; };
+		EEAA54FA1C278722009976E5 /* MainViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA54F91C278722009976E5 /* MainViews.swift */; };
 		EEABA0971BF4438B00B49F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEABA0961BF4438B00B49F7A /* AppDelegate.swift */; };
-		EEABA0991BF4438B00B49F7A /* MainViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEABA0981BF4438B00B49F7A /* MainViews.swift */; };
+		EEABA0991BF4438B00B49F7A /* WelcomeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEABA0981BF4438B00B49F7A /* WelcomeViews.swift */; };
 		EEABA09C1BF4438B00B49F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEABA09A1BF4438B00B49F7A /* Main.storyboard */; };
 		EEABA09F1BF4438B00B49F7A /* Fabric.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEABA09D1BF4438B00B49F7A /* Fabric.xcdatamodeld */; };
 		EEABA0A41BF4438C00B49F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEABA0A21BF4438C00B49F7A /* LaunchScreen.storyboard */; };
@@ -73,10 +78,15 @@
 		18F69F5B1BF930940080D2CD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18F69F5C1BF930940080D2CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18F69F5D1BF930940080D2CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EE69362E1C262A38007D58D5 /* DevTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevTools.swift; sourceTree = "<group>"; };
 		EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEA873FA1C250E1700BA8AD3 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		EEA873FC1C250E7C00BA8AD3 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		EEA873FE1C250EF800BA8AD3 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		EEAA54F91C278722009976E5 /* MainViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViews.swift; sourceTree = "<group>"; };
 		EEABA0931BF4438B00B49F7A /* Fabric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fabric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEABA0961BF4438B00B49F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEABA0981BF4438B00B49F7A /* MainViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViews.swift; sourceTree = "<group>"; };
+		EEABA0981BF4438B00B49F7A /* WelcomeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViews.swift; sourceTree = "<group>"; };
 		EEABA09B1BF4438B00B49F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEABA09E1BF4438B00B49F7A /* Fabric.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fabric.xcdatamodel; sourceTree = "<group>"; };
 		EEABA0A31BF4438C00B49F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,6 +167,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EEAA54F81C278707009976E5 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA54F91C278722009976E5 /* MainViews.swift */,
+			);
+			name = MainViews;
+			sourceTree = "<group>";
+		};
+		EEAA54FB1C278739009976E5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EEBD227A1C24B15A006CF08E /* ColorizeImage.swift */,
+				EEA873FA1C250E1700BA8AD3 /* FontAwesome.swift */,
+				EEA873FE1C250EF800BA8AD3 /* Enum.swift */,
+				EE69362E1C262A38007D58D5 /* DevTools.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		EEAA54FC1C278772009976E5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEF902ED1BF64D0700CA84A2 /* ThirstyScript.otf */,
+				EEA873FC1C250E7C00BA8AD3 /* FontAwesome.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		EEABA08A1BF4438B00B49F7A = {
 			isa = PBXGroup;
 			children = (
@@ -180,13 +218,14 @@
 			isa = PBXGroup;
 			children = (
 				EEABA0961BF4438B00B49F7A /* AppDelegate.swift */,
-				EEABA0981BF4438B00B49F7A /* MainViews.swift */,
-				EEABA09A1BF4438B00B49F7A /* Main.storyboard */,
-				EEABA0A21BF4438C00B49F7A /* LaunchScreen.storyboard */,
 				EEABA0A51BF4438C00B49F7A /* Info.plist */,
+				EEABA0981BF4438B00B49F7A /* WelcomeViews.swift */,
+				EEABA09A1BF4438B00B49F7A /* Main.storyboard */,
+				EEAA54FB1C278739009976E5 /* Libraries */,
+				EEAA54F81C278707009976E5 /* MainViews */,
+				EEAA54FC1C278772009976E5 /* Fonts */,
 				EEABA09D1BF4438B00B49F7A /* Fabric.xcdatamodeld */,
-				EEF902ED1BF64D0700CA84A2 /* ThirstyScript.otf */,
-				EEBD227A1C24B15A006CF08E /* ColorizeImage.swift */,
+				EEABA0A21BF4438C00B49F7A /* LaunchScreen.storyboard */,
 				EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */,
 			);
 			path = Fabric;
@@ -298,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEABA0A41BF4438C00B49F7A /* LaunchScreen.storyboard in Resources */,
+				EEA873FD1C250E7C00BA8AD3 /* FontAwesome.otf in Resources */,
 				EEF902EE1BF64D0700CA84A2 /* ThirstyScript.otf in Resources */,
 				EEA873F91C24B9DD00BA8AD3 /* Assets.xcassets in Resources */,
 				EEABA09C1BF4438B00B49F7A /* Main.storyboard in Resources */,
@@ -325,8 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA873FB1C250E1700BA8AD3 /* FontAwesome.swift in Sources */,
 				EEBD227B1C24B15A006CF08E /* ColorizeImage.swift in Sources */,
-				EEABA0991BF4438B00B49F7A /* MainViews.swift in Sources */,
+				EEA873FF1C250EF800BA8AD3 /* Enum.swift in Sources */,
+				EEABA0991BF4438B00B49F7A /* WelcomeViews.swift in Sources */,
+				EE69362F1C262A38007D58D5 /* DevTools.swift in Sources */,
+				EEAA54FA1C278722009976E5 /* MainViews.swift in Sources */,
 				EEABA0971BF4438B00B49F7A /* AppDelegate.swift in Sources */,
 				EEABA09F1BF4438B00B49F7A /* Fabric.xcdatamodeld in Sources */,
 			);

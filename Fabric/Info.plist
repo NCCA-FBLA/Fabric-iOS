@@ -24,6 +24,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>FontAwesome.otf</string>
 		<string>ThirstyScript.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
