@@ -2,34 +2,40 @@
 //  SignInViewController.swift
 //  Fabric
 //
-//  Created by NCCA EBI on 1/12/16.
+//  Created by James Parsons on 1/12/16.
 //  Copyright © 2016 NCCA-FBLA. All rights reserved.
 //
 
 import UIKit
 
 class SignInViewController: UIViewController {
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var twitterButton: UIButton!
+    @IBOutlet weak var appLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set the app nme font.
+        self.appLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 30)
+        // Set the corner radius on the buttons.
+        self.facebookButton.layer.cornerRadius = 5.0
+        self.twitterButton.layer.cornerRadius = 5.0
 
-        // Do any additional setup after loading the view.
+        // Set up the background image.
+        // Credit to Tyler for this beauty.
+        let img = UIImage(named: "manhattan")?.tint(UIColor(colorLiteralRed: 221.0/255.0, green: 43.0/255.0, blue: 105/255.0, alpha: 175.0/255.0))
+        let imageView = UIImageView(image: img!)
+        imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.bounds.height*(16/9), height: self.view.bounds.height))
+        imageView.center = CGPointMake(self.view.bounds.width/2, self.view.bounds.height/2)
+        
+        self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
