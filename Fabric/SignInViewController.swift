@@ -37,5 +37,10 @@ class SignInViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // TEMPORARY: Just go on to the next view.
+    @IBAction func temporary(sender: UIButton) {
+        performSegueWithIdentifier("showFromSignIn", sender: nil)
+    }
+    
 }

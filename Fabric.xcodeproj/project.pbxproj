@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		050FACDB1C45A1D800FD11B7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */; };
+		0579F9CC1C4EE00D009FBC8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */; };
 		18F69F491BF930150080D2CD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F421BF930150080D2CD /* Bolts.framework */; };
 		18F69F4A1BF930150080D2CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F431BF930150080D2CD /* Parse.framework */; };
 		18F69F4B1BF930150080D2CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F441BF930150080D2CD /* ParseCrashReporting.framework */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18F69F421BF930150080D2CD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		18F69F431BF930150080D2CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18F69F441BF930150080D2CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				EEABA0A51BF4438C00B49F7A /* Info.plist */,
 				EEABA0981BF4438B00B49F7A /* SplashViewController.swift */,
 				EEABA09A1BF4438B00B49F7A /* Main.storyboard */,
+				0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */,
 				EEAA54FB1C278739009976E5 /* Libraries */,
 				EEAA54F81C278707009976E5 /* MainViews */,
 				EEAA54FC1C278772009976E5 /* Fonts */,
@@ -377,6 +380,7 @@
 				EEAA54FA1C278722009976E5 /* MainViews.swift in Sources */,
 				EEABA0971BF4438B00B49F7A /* AppDelegate.swift in Sources */,
 				EEABA09F1BF4438B00B49F7A /* Fabric.xcdatamodeld in Sources */,
+				0579F9CC1C4EE00D009FBC8B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,10 +560,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FabricTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ncca-fbla.FabricTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FabricTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fabric.app/Fabric";
 			};
 			name = Debug;
@@ -568,10 +575,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FabricTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ncca-fbla.FabricTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FabricTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fabric.app/Fabric";
 			};
 			name = Release;
