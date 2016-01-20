@@ -418,55 +418,75 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="29f-jH-TVZ" kind="show" identifier="followers" id="Yox-2G-fct"/>
-                        <segue destination="ze6-Wj-RcU" kind="show" identifier="following" id="Dhn-mx-CdS"/>
+                        <segue destination="KV1-fM-wlD" kind="show" identifier="following" id="DEz-OA-8De"/>
+                        <segue destination="2ha-uT-c1J" kind="show" identifier="followers" id="2Mz-lG-989"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DR-nb-C3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234" y="1015"/>
+            <point key="canvasLocation" x="2093" y="1068"/>
         </scene>
         <!--Followers-->
-        <scene sceneID="tNk-vk-6oF">
+        <scene sceneID="UJ1-dk-4QE">
             <objects>
-                <viewController title="Followers" id="29f-jH-TVZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3GA-md-tIM"/>
-                        <viewControllerLayoutGuide type="bottom" id="wtW-rY-H0W"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="noN-8u-277">
+                <tableViewController title="Followers" id="2ha-uT-c1J" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4Vu-l2-jzu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eaE-0a-nEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="htM-mr-7Wr">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htM-mr-7Wr" id="vEy-04-P88">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2ha-uT-c1J" id="cKf-nB-b5Q"/>
+                            <outlet property="delegate" destination="2ha-uT-c1J" id="UaS-1T-8kI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrh-Tg-V9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234" y="1763"/>
+            <point key="canvasLocation" x="2940" y="2000"/>
         </scene>
         <!--Following-->
-        <scene sceneID="kTH-xk-mjK">
+        <scene sceneID="ask-qy-eHS">
             <objects>
-                <viewController title="Following" id="ze6-Wj-RcU" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LNT-ZA-kCF"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tdc-sP-9UU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kHf-Sp-hTs">
+                <tableViewController title="Following" id="KV1-fM-wlD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Ct-yo-BbA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nKi-p4-zvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b7p-tC-0f8">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b7p-tC-0f8" id="Dof-L0-wtN">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KV1-fM-wlD" id="grE-Gd-yjy"/>
+                            <outlet property="delegate" destination="KV1-fM-wlD" id="bhY-8S-EfV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OE7-yz-As5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2894" y="1763"/>
+            <point key="canvasLocation" x="2085" y="2016"/>
         </scene>
     </scenes>
     <resources>
         <image name="rounded_corners" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="feC-FU-Z6N"/>
+        <segue reference="FXt-qJ-uM7"/>
     </inferredMetricsTieBreakers>
 </document>
