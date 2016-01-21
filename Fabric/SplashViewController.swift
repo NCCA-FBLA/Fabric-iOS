@@ -11,7 +11,7 @@ import Parse
 
 class SplashViewController: UIViewController {
     @IBOutlet weak var splashImage: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 	
@@ -25,9 +25,13 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
 		
         // Move the icon away.
-		if (PFUser.currentUser() == nil) {
-			UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("signIn", sender: self)})
-		}
+        
+ 
+		 if (PFUser.currentUser() == nil) {
+            // Edited while we fix Tyler's crap.
+            UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("showFromSplash", sender: self)})
+		 }
+
     }
 }
 

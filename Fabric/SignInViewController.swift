@@ -16,7 +16,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the app nme font.
+        // Set the app name font.
         self.appLabel.font = UIFont(name: "ThirstyScriptExtraboldDemo", size: 30)
         // Set the corner radius on the buttons.
         self.facebookButton.layer.cornerRadius = 5.0
