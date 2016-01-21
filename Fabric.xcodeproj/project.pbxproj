@@ -10,6 +10,14 @@
 		050FACDB1C45A1D800FD11B7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */; };
 		0579F9CC1C4EE00D009FBC8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */; };
 		0579FA0F1C514987009FBC8B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA0E1C514987009FBC8B /* NavigationViewController.swift */; };
+		0579FA171C5177B0009FBC8B /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA161C5177B0009FBC8B /* NewPostViewController.swift */; };
+		0579FA1B1C517A39009FBC8B /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA1A1C517A39009FBC8B /* HomeTabViewController.swift */; };
+		0579FA1D1C517A50009FBC8B /* StarredTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA1C1C517A50009FBC8B /* StarredTabViewController.swift */; };
+		0579FA1F1C517A73009FBC8B /* SocialTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA1E1C517A73009FBC8B /* SocialTabViewController.swift */; };
+		0579FA211C517A92009FBC8B /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA201C517A92009FBC8B /* FollowersViewController.swift */; };
+		0579FA231C517AAC009FBC8B /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA221C517AAC009FBC8B /* FollowingViewController.swift */; };
+		0579FA251C517AC4009FBC8B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA241C517AC4009FBC8B /* PostViewController.swift */; };
+		0579FA271C517AEA009FBC8B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA261C517AEA009FBC8B /* ProfileViewController.swift */; };
 		18F69F491BF930150080D2CD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F421BF930150080D2CD /* Bolts.framework */; };
 		18F69F4A1BF930150080D2CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F431BF930150080D2CD /* Parse.framework */; };
 		18F69F4B1BF930150080D2CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F441BF930150080D2CD /* ParseCrashReporting.framework */; };
@@ -29,12 +37,7 @@
 		18F69F661BF930940080D2CD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F5B1BF930940080D2CD /* Social.framework */; };
 		18F69F671BF930940080D2CD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F5C1BF930940080D2CD /* StoreKit.framework */; };
 		18F69F681BF930940080D2CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F5D1BF930940080D2CD /* SystemConfiguration.framework */; };
-		EE69362F1C262A38007D58D5 /* DevTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69362E1C262A38007D58D5 /* DevTools.swift */; };
 		EEA873F91C24B9DD00BA8AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */; };
-		EEA873FB1C250E1700BA8AD3 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA873FA1C250E1700BA8AD3 /* FontAwesome.swift */; };
-		EEA873FD1C250E7C00BA8AD3 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA873FC1C250E7C00BA8AD3 /* FontAwesome.otf */; };
-		EEA873FF1C250EF800BA8AD3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA873FE1C250EF800BA8AD3 /* Enum.swift */; };
-		EEAA54FA1C278722009976E5 /* MainViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA54F91C278722009976E5 /* MainViews.swift */; };
 		EEABA0971BF4438B00B49F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEABA0961BF4438B00B49F7A /* AppDelegate.swift */; };
 		EEABA0991BF4438B00B49F7A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEABA0981BF4438B00B49F7A /* SplashViewController.swift */; };
 		EEABA09C1BF4438B00B49F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEABA09A1BF4438B00B49F7A /* Main.storyboard */; };
@@ -65,6 +68,14 @@
 		050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0579FA0E1C514987009FBC8B /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		0579FA161C5177B0009FBC8B /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		0579FA1A1C517A39009FBC8B /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		0579FA1C1C517A50009FBC8B /* StarredTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarredTabViewController.swift; sourceTree = "<group>"; };
+		0579FA1E1C517A73009FBC8B /* SocialTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialTabViewController.swift; sourceTree = "<group>"; };
+		0579FA201C517A92009FBC8B /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		0579FA221C517AAC009FBC8B /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		0579FA241C517AC4009FBC8B /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		0579FA261C517AEA009FBC8B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		18F69F421BF930150080D2CD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		18F69F431BF930150080D2CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18F69F441BF930150080D2CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -84,12 +95,7 @@
 		18F69F5B1BF930940080D2CD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18F69F5C1BF930940080D2CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18F69F5D1BF930940080D2CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		EE69362E1C262A38007D58D5 /* DevTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevTools.swift; sourceTree = "<group>"; };
 		EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EEA873FA1C250E1700BA8AD3 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
-		EEA873FC1C250E7C00BA8AD3 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		EEA873FE1C250EF800BA8AD3 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
-		EEAA54F91C278722009976E5 /* MainViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViews.swift; sourceTree = "<group>"; };
 		EEABA0931BF4438B00B49F7A /* Fabric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fabric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEABA0961BF4438B00B49F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEABA0981BF4438B00B49F7A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -173,21 +179,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEAA54F81C278707009976E5 /* MainViews */ = {
-			isa = PBXGroup;
-			children = (
-				EEAA54F91C278722009976E5 /* MainViews.swift */,
-			);
-			name = MainViews;
-			sourceTree = "<group>";
-		};
 		EEAA54FB1C278739009976E5 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
 				EEBD227A1C24B15A006CF08E /* ColorizeImage.swift */,
-				EEA873FA1C250E1700BA8AD3 /* FontAwesome.swift */,
-				EEA873FE1C250EF800BA8AD3 /* Enum.swift */,
-				EE69362E1C262A38007D58D5 /* DevTools.swift */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -196,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				EEF902ED1BF64D0700CA84A2 /* ThirstyScript.otf */,
-				EEA873FC1C250E7C00BA8AD3 /* FontAwesome.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -229,13 +223,20 @@
 				EEABA09A1BF4438B00B49F7A /* Main.storyboard */,
 				0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */,
 				EEAA54FB1C278739009976E5 /* Libraries */,
-				EEAA54F81C278707009976E5 /* MainViews */,
 				EEAA54FC1C278772009976E5 /* Fonts */,
 				EEABA09D1BF4438B00B49F7A /* Fabric.xcdatamodeld */,
 				EEABA0A21BF4438C00B49F7A /* LaunchScreen.storyboard */,
 				EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */,
 				050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */,
 				0579FA0E1C514987009FBC8B /* NavigationViewController.swift */,
+				0579FA161C5177B0009FBC8B /* NewPostViewController.swift */,
+				0579FA1A1C517A39009FBC8B /* HomeTabViewController.swift */,
+				0579FA1C1C517A50009FBC8B /* StarredTabViewController.swift */,
+				0579FA1E1C517A73009FBC8B /* SocialTabViewController.swift */,
+				0579FA201C517A92009FBC8B /* FollowersViewController.swift */,
+				0579FA221C517AAC009FBC8B /* FollowingViewController.swift */,
+				0579FA241C517AC4009FBC8B /* PostViewController.swift */,
+				0579FA261C517AEA009FBC8B /* ProfileViewController.swift */,
 			);
 			path = Fabric;
 			sourceTree = "<group>";
@@ -346,7 +347,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEABA0A41BF4438C00B49F7A /* LaunchScreen.storyboard in Resources */,
-				EEA873FD1C250E7C00BA8AD3 /* FontAwesome.otf in Resources */,
 				EEF902EE1BF64D0700CA84A2 /* ThirstyScript.otf in Resources */,
 				EEA873F91C24B9DD00BA8AD3 /* Assets.xcassets in Resources */,
 				EEABA09C1BF4438B00B49F7A /* Main.storyboard in Resources */,
@@ -374,17 +374,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA873FB1C250E1700BA8AD3 /* FontAwesome.swift in Sources */,
+				0579FA251C517AC4009FBC8B /* PostViewController.swift in Sources */,
+				0579FA1D1C517A50009FBC8B /* StarredTabViewController.swift in Sources */,
+				0579FA231C517AAC009FBC8B /* FollowingViewController.swift in Sources */,
+				0579FA1F1C517A73009FBC8B /* SocialTabViewController.swift in Sources */,
 				0579FA0F1C514987009FBC8B /* NavigationViewController.swift in Sources */,
+				0579FA211C517A92009FBC8B /* FollowersViewController.swift in Sources */,
 				EEBD227B1C24B15A006CF08E /* ColorizeImage.swift in Sources */,
-				EEA873FF1C250EF800BA8AD3 /* Enum.swift in Sources */,
+				0579FA271C517AEA009FBC8B /* ProfileViewController.swift in Sources */,
 				EEABA0991BF4438B00B49F7A /* SplashViewController.swift in Sources */,
-				EE69362F1C262A38007D58D5 /* DevTools.swift in Sources */,
 				050FACDB1C45A1D800FD11B7 /* SignInViewController.swift in Sources */,
-				EEAA54FA1C278722009976E5 /* MainViews.swift in Sources */,
+				0579FA1B1C517A39009FBC8B /* HomeTabViewController.swift in Sources */,
 				EEABA0971BF4438B00B49F7A /* AppDelegate.swift in Sources */,
 				EEABA09F1BF4438B00B49F7A /* Fabric.xcdatamodeld in Sources */,
 				0579F9CC1C4EE00D009FBC8B /* MainViewController.swift in Sources */,
+				0579FA171C5177B0009FBC8B /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

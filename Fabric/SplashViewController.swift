@@ -18,6 +18,7 @@ class SplashViewController: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -25,10 +26,8 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
 		
         // Move the icon away.
-        
- 
 		 if (PFUser.currentUser() == nil) {
-            // Edited while we fix Tyler's crap.
+            // FIXME: Broken no matter which segue you choose.
             UIView.animateWithDuration(1, delay: 0.6, options: [.CurveEaseInOut], animations: {self.splashImage.center.y -= self.view.bounds.height }, completion: {Bool in self.performSegueWithIdentifier("showFromSplash", sender: self)})
 		 }
 
