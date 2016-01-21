@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		050FACDB1C45A1D800FD11B7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */; };
 		0579F9CC1C4EE00D009FBC8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */; };
+		0579FA0F1C514987009FBC8B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA0E1C514987009FBC8B /* NavigationViewController.swift */; };
 		18F69F491BF930150080D2CD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F421BF930150080D2CD /* Bolts.framework */; };
 		18F69F4A1BF930150080D2CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F431BF930150080D2CD /* Parse.framework */; };
 		18F69F4B1BF930150080D2CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F441BF930150080D2CD /* ParseCrashReporting.framework */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0579F9CB1C4EE00D009FBC8B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0579FA0E1C514987009FBC8B /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		18F69F421BF930150080D2CD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		18F69F431BF930150080D2CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18F69F441BF930150080D2CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				EEABA0A21BF4438C00B49F7A /* LaunchScreen.storyboard */,
 				EEA873F81C24B9DD00BA8AD3 /* Assets.xcassets */,
 				050FACDA1C45A1D800FD11B7 /* SignInViewController.swift */,
+				0579FA0E1C514987009FBC8B /* NavigationViewController.swift */,
 			);
 			path = Fabric;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA873FB1C250E1700BA8AD3 /* FontAwesome.swift in Sources */,
+				0579FA0F1C514987009FBC8B /* NavigationViewController.swift in Sources */,
 				EEBD227B1C24B15A006CF08E /* ColorizeImage.swift in Sources */,
 				EEA873FF1C250EF800BA8AD3 /* Enum.swift in Sources */,
 				EEABA0991BF4438B00B49F7A /* SplashViewController.swift in Sources */,
