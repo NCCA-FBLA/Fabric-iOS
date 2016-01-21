@@ -18,6 +18,7 @@
 		0579FA231C517AAC009FBC8B /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA221C517AAC009FBC8B /* FollowingViewController.swift */; };
 		0579FA251C517AC4009FBC8B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA241C517AC4009FBC8B /* PostViewController.swift */; };
 		0579FA271C517AEA009FBC8B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579FA261C517AEA009FBC8B /* ProfileViewController.swift */; };
+		0579FA291C5188C6009FBC8B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0579FA281C5188C6009FBC8B /* Settings.bundle */; };
 		18F69F491BF930150080D2CD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F421BF930150080D2CD /* Bolts.framework */; };
 		18F69F4A1BF930150080D2CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F431BF930150080D2CD /* Parse.framework */; };
 		18F69F4B1BF930150080D2CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F69F441BF930150080D2CD /* ParseCrashReporting.framework */; };
@@ -76,6 +77,7 @@
 		0579FA221C517AAC009FBC8B /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		0579FA241C517AC4009FBC8B /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		0579FA261C517AEA009FBC8B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0579FA281C5188C6009FBC8B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		18F69F421BF930150080D2CD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		18F69F431BF930150080D2CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18F69F441BF930150080D2CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		EEABA08A1BF4438B00B49F7A = {
 			isa = PBXGroup;
 			children = (
+				0579FA281C5188C6009FBC8B /* Settings.bundle */,
 				EEABA0951BF4438B00B49F7A /* Fabric */,
 				EEABA0941BF4438B00B49F7A /* Products */,
 				18F69F501BF9301D0080D2CD /* Frameworks */,
@@ -348,6 +351,7 @@
 			files = (
 				EEABA0A41BF4438C00B49F7A /* LaunchScreen.storyboard in Resources */,
 				EEF902EE1BF64D0700CA84A2 /* ThirstyScript.otf in Resources */,
+				0579FA291C5188C6009FBC8B /* Settings.bundle in Resources */,
 				EEA873F91C24B9DD00BA8AD3 /* Assets.xcassets in Resources */,
 				EEABA09C1BF4438B00B49F7A /* Main.storyboard in Resources */,
 			);
