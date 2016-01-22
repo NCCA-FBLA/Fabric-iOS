@@ -482,7 +482,7 @@
                             <outlet property="delegate" destination="9fS-Ag-JYS" id="VEu-LM-RPh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home-Active" selectedImage="Home" id="ZuO-L3-zZl"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home-Active" id="ZuO-L3-zZl"/>
                     <connections>
                         <segue destination="eGS-zB-Oal" kind="showDetail" identifier="viewPost" id="rZX-yG-sPz"/>
                     </connections>
@@ -633,7 +633,7 @@
                             <outlet property="delegate" destination="4dS-dC-59B" id="eA8-Gt-s3J"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Favorites" image="Stars-Filled" selectedImage="Stars" id="eLl-5Z-ctB"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="Stars" selectedImage="Stars-Filled" id="eLl-5Z-ctB"/>
                     <connections>
                         <segue destination="eGS-zB-Oal" kind="showDetail" identifier="viewPost" id="Rk1-oQ-cyX"/>
                     </connections>
