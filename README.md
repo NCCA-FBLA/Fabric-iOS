@@ -1,3 +1,5 @@
+> :warning: **This repository has been deprected in favor of the Hybrid (Ionic) application.**
+
 # Fabric-iOS
 
 ![Fabric Logo](https://raw.githubusercontent.com/NCCA-FBLA/Fabric-iOS/master/Fabric/Assets.xcassets/Icons/rounded_corners.imageset/rounded_corners%403x.png)
